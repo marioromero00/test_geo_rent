@@ -155,12 +155,9 @@ h2 { font-family: var(--font-h); font-size: clamp(34px, 4.5vw, 58px); font-weigh
 #camiones { background: var(--bg); }
 .camiones-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; border-radius: 14px; overflow: hidden; box-shadow: var(--sombra); border: 1px solid var(--borde); }
 .camion-card {
-  background: #fff; padding: 32px 30px; text-decoration: none; color: inherit; display: block;
-  border-left: 4px solid transparent; transition: background 0.2s, border-color 0.2s; position: relative; overflow: hidden;
+  background: #fff; padding: 32px 30px; color: inherit; display: block;
+  border-left: 4px solid transparent; position: relative; overflow: hidden;
 }
-.camion-card::after { content: '→'; position: absolute; bottom: 28px; right: 28px; width: 36px; height: 36px; background: var(--azul); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; line-height: 36px; text-align: center; opacity: 0; transform: scale(0.7); transition: opacity 0.25s, transform 0.25s; }
-.camion-card:hover { background: #EBF5FC; border-color: var(--azul); }
-.camion-card:hover::after { opacity: 1; transform: scale(1); }
 .camion-num { font-family: var(--font-h); font-size: 11px; font-weight: 700; color: var(--azul); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
 .camion-num::before { content: ''; width: 20px; height: 2px; background: var(--azul); }
 .camion-nombre { font-family: var(--font-h); font-size: 24px; font-weight: 900; text-transform: uppercase; line-height: 1.2; color: var(--texto); margin-bottom: 12px; }
